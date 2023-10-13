@@ -1,0 +1,444 @@
+@charset "utf-8";
+@import url('fonts.css');
+
+@media (min-width: 1024px) {
+body {
+font-family: "Noto Sans KR", "Nanum Gothic", "Jeju Gothic", "Tenor Sans",
+"Nunito Sans", "Open Sans", "DM Sans", "Comfortaa", "Sulphur Point",
+"Maven Pro", "Varela Round", "Quicksand";
+background: #f4efe4;
+color: #75553c;
+}
+.onTop {
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background: #75553c;
+  box-shadow: 0 1px 3px #777;
+  z-index: 15;
+}
+.onTop span > a {
+  line-height: 3;
+  color: #f4efe4;
+  font-family: "Tenor Sans", "Nunito Sans";
+  font-size: 16px;
+}
+.onTop .btn_close {
+  float: right;
+  margin-right:100px;
+  margin-top: 15px;
+  font-size: 16px;
+  background: none;
+  color: #e9e4da;
+  border: none;
+}
+
+.onTop .btn_close:hover > i {
+  color: #e06411;
+}
+ /* inner-haeder */
+  #header .inner-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  padding: 80px 80px;
+  box-sizing: border-box;
+  font-family: "Comfortaa", "Sulphur Point", "Maven Pro";
+  color: #674830;
+  background: #f4efe4;
+  z-index: 10;
+}
+
+.inner-header .logo {
+  float: left;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 0.7%;
+}
+
+
+/* gnb */
+.gnb {
+  position: absolute;
+  width: 40%;
+  top: 70%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+.gnb .menu_list > li {
+  float: left;
+  width: calc(100% / 5 - 50px);
+  margin-left: 10px;
+  padding: 0 15px;
+  line-height: 50px;
+}
+.gnb .menu_list > li:hover{
+  background-color: #e9e4da;
+  border-radius: 40px;
+  height: 40px;
+}
+
+.gnb .menu_list > li > a {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #75553c;
+  box-sizing: border-box;
+}
+
+.menu_list > li:hover a {
+  color: #602a19;
+  transition: all 0.2s;
+  z-index: 100;
+}
+
+.sub_menu {
+  position: absolute;
+  top: 50px;
+  background: #e9e4da;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  width: 180px;
+  padding: 20px 0;
+  margin-left: -35px;
+  display: none;
+  border-radius: 10px;
+}
+.sub_menu > li{
+  padding: 0 30px;
+}
+.sub_menu > li:hover{
+  background: #a88f7a;
+}
+.sub_menu > li > a {
+  font-size: 16px;
+}
+
+.gnb .menu_list .sub_menu a:hover {
+  color: #8e4616;
+  transition: all 0.2s;
+  
+}
+.gnb .menu_list > li:hover .sub_menu {
+  display: block;
+}
+
+/* //gnb */
+
+.util {
+  float: right;
+  height: auto;
+  margin-top: 0.7%;
+}
+.util ul li {
+  float: left;
+}
+.iconSeach {
+  margin-right: 20px;
+}
+.iconSeach > a > i {
+  font-size: 20px;
+}
+.cart {
+  width: 20px;
+  height: 20px;
+  background: #75553c;
+  border-radius: 50%;
+  text-align: center;
+  color: #f4efe4;
+}
+.cart .wish_btn {
+  position: relative;
+}
+.cart .wish_btn > span {
+  position: absolute;
+  top: 4.5px;
+  right: -3px;
+  font-size: 10px;
+}
+
+/* searchArea */
+.searchArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -100%; left: 0; right: 0;
+  height: 300px;
+  background: #f7f2ef;
+  opacity: 0;
+  z-index: 10;
+  margin-top: 150px;
+}
+.searchArea .searchInner {
+  width: 40%;
+  text-align: center;
+}
+.searchArea .searchInner > p {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+.searchInner .search {position: relative; width: 60%; margin: 0 auto; text-align: center;}
+.searchInner .search input {
+  width: 100%;
+  height: 56px; 
+  line-height: 56px;
+  padding-left: 20px;
+  border-radius: 60px;
+  border: 1px solid rgba(86, 69, 54, 0.606);
+  font-size: 18px;
+}
+.searchInner .search input:focus {outline: 1px solid rgba(86, 69, 54, 0.606);}
+
+/* 삭제버튼 */
+input::-ms-clear,
+input::-ms-reveal{display:none;width:0;height:0;}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+display:none;
+}
+.searchInner .search button {
+  position: absolute;
+  top: 10px; right: 20px;
+  width: 32px; height: 32px;
+  background: url(../img/search.png) no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+.searchArea .btnClose {
+  position: absolute;
+  top: 50px; right: 50px;
+  width: 40px; height: 40px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+.grayBox {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: none;
+}
+
+/* //header */
+
+/* container */
+#container{
+    width: 100%;
+    margin: 0 auto;
+
+    color: 0;
+} 
+
+/* 공통 */
+.cont_inner {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+/* content01 */
+.content01 .cont_inner .video_content {
+  width: 100%;
+}
+.video_content video {
+    width: 100%;
+}
+.textArea01 {
+    text-align: center;
+}
+.textArea01 .title {
+    font-family: 'Tenor Sans', 'Nunito Sans','Open Sans','DM Sans';
+    font-size: 30px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+.textArea01 .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.textArea01 .txt {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 100px;
+}
+/* //content01 */
+
+.content02 {
+    width: 100%;
+    background-color: #e9e4da;
+    padding-bottom: 100px;
+
+}
+.textArea02 {
+    font-family: 'Tenor Sans', 'Nunito Sans','Open Sans','DM Sans';
+    padding-top: 100px;
+}
+.textArea02 .title {
+    margin-bottom: 50px;
+    font-size: 19px;
+}
+.textArea02 .text {
+    margin-bottom: 50px;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+.textArea02 .txt {
+    display: block;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+/* potoArea */
+.photoArea {
+    width:90%;
+    margin: 0 auto;
+}
+.photo_card li {
+    float: left;
+    width: calc(100%/3 - 50px);
+    margin-left: 50px;
+    letter-spacing: -0.7px;
+}
+.photo_card li > a > img {
+    width: 100%;
+    text-align: center;
+}
+/* // potoarea */
+.btnArea {
+  margin-top: 100px;
+ 
+}
+.btnArea > a {
+   display: inline-block;
+   background: #75553c;
+   color: #fff;
+   padding: 15px 45px;
+   font-family: 'Tenor Sans', 'Nunito Sans','Open Sans','DM Sans';
+   font-size: 15px;
+   font-weight: 100;
+}
+.btnArea > a:hover {
+  color: #a88f7a;
+}
+/* //content02 */
+
+/* content03 */
+.titleArea {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  font-family: 'Tenor Sans', 'Nunito Sans','Open Sans','DM Sans';
+}
+.titleArea h3 {font-size: 14px; margin-bottom: 10px;}
+.prdList  ul  li {
+  float: left;
+  width: calc(100%/4 - 60px);
+  margin-left: 60px;
+  margin-bottom: 70px;  
+}
+.prd > a > figure {overflow: hidden;}
+.prd > a > figure:hover > img {scale: 1.1;}
+.prd > a > figure > img {max-width: 100%; transition: all 0.3s;}
+.prd_Textarea {
+  margin-top: 15px; 
+  text-align: left;
+  line-height: 1.5em;
+}
+.prd:hover .prd_Textarea {color: #e06411;}
+.prd_Textarea .own_Brand {font-size: 12px;}
+.prd_Textarea .prd_name {
+  font-size: 16px;
+  overflow: hidden;/* 박스에서 넘쳐난 텍스트 숨기기 */
+  white-space: normal;/* 줄바꿈이 없어짐 */
+  text-overflow: ellipsis;/*  ... 말줄임 효과 */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;/* -webkit-line-clamp: 글의 최대 라인수를 결정 */
+  -webkit-box-orient: vertical;
+  word-break: keep-all; /* keep-all; :문단으로 끊어져서 줄바꿈 됨  //  break-all;: 어절이 유지되지 않고 끊어져서 줄바꿈 됨 */
+}
+.prd_Textarea .acceptance {font-size: 14px;margin-top: 5px;}
+/* //content03 */
+
+/* content04 */
+.main_Banner figure img {width: 100%; margin-top: 100px; margin-bottom: 100px;}
+.txt_insta {
+  font-family: "Comfortaa", "Sulphur Point", "Maven Pro";
+  margin-bottom: 100px;
+}
+.insta_tit {font-size: 35px; margin-bottom: 20px;}
+.insta_adr {font-size: 15px;}
+.insta_adr a:hover {color: #e06411;}
+/* //content04 */
+/* //container */
+
+/* footer */
+#footer{
+  width: 100%;
+  height: 270px;
+  background-color: #e9e4da;
+  padding: 50px 0;
+}
+#footer .foot_inner {
+  width: 90%;
+  margin: 0 auto;
+}
+.info_Area {position: relative;
+height: 230px;}
+.info_Area > .info {
+  display: block;
+  font-size: 16px;
+}
+.info_Area > .info > ul {
+  margin-top: 15px;
+}
+.info_Area > .company {
+position: absolute;
+left: 0;
+width: 360px;
+}
+.info_Area > .company > li:nth-child(2){
+  display: inline-block;
+}
+.info_Area > .customer{
+position: absolute;
+left: 25%;
+}
+.info_Area> .inquiry {
+position: absolute;
+left: 40%;
+}
+.info_Area> .agreement {
+position: absolute;
+right: 0;
+text-align: right;
+}
+.info_Area > li > ul > li {
+  font-size: 12px;
+  line-height: 2em;
+} 
+.foot_inner .copyright{
+  font-size: 14px;
+  clear: both;
+  padding-top: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+}

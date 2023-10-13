@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHanger</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="icon" href="img/favicon-66bee57ce5b55b69c1a590fab1cd7e27.ico">
+    <link rel="stylesheet" href="css/dreamhanger.css">
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $('.btn_close').on('click', function() {
+        $('.onTop').slideUp(200)
+      })
+    </script>
+    
+    
+    <div id="wrap">
+      <header id="header">   
+        <!-- inner header -->
+        <!-- onTop -->    
+          <div class="onTop">
+            <span>
+              <a href="#">기업회원, 무료 샘플 제공 EVENT</a>
+              <button class="btn_close" onclick="$('.onTop').fadeOut()"><i class="xi-close"></i></button>
+            </span>
+          </div>
+        <!-- //onTop -->
+        <div class="inner-header clear">
+          <!-- logo -->
+          <h1 class="logo"><a href="#">dreamhanger</a></h1>
+          <!-- //logo -->
+
+          <!-- gnb -->
+          <nav class="gnb">
+            <ul class="menu_list clear">
+              <li><a href="about.html">About Us</a></li>
+              <li>
+                <a href="#">Product</a>
+                <ul class="sub_menu">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">Collaborations</a></li>
+                  <li><a href="#">Dog</a></li>
+                  <li><a href="#">Life</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Board</a>
+                <ul class="sub_menu">
+                  <li><a href="#">Notice</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Q&amp;A</a></li>
+                  <li><a href="#">News</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a href="#">Account</a>
+                <ul class="sub_menu">
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="#">join</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- //gnb -->
+
+          <!-- util -->
+          <div class="util clear">
+            <ul>
+              <li class="iconSeach">
+                <a href="#">
+                  <i class="fa-solid fa-magnifying-glass" style="color: #75553c"></i>
+                </a>
+              </li>
+              <li class="cart">
+                <a href="#" class="wish_btn">
+                  <span class="orderBasketCount">0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="searchArea">
+            <div class="searchInner">
+                <p>관심있는 상품를 <br>찾아보세요</p>
+                <div class="search">
+                    <input type="search" placeholder="검색할 상품을 입력하세요">
+                    <button><span class="blind">clear</span></button>
+                </div>
+            </div>
+            <button class="btnClose"><img src="img/close.png" alt="닫기"></button>
+        </div>
+        </div>
+      </header>
+      <div class="grayBox"></div>
+      <!-- //header -->
+
+      <!-- container -->
+      <div id="container">
+        <!-- content01 -->
+        <div class="content01">
+          <div class="cont_inner">
+            <div class="video_content">
+              <video muted autoplay loop>
+                <source src="img/main_mov.mp4" video="video/mp4"/>
+              </video>          
+            </div>
+            <div class="textArea01">
+              <h2 class="title">"Journey with your lovely pet"</h2>
+              <p class="text">
+                드림행거는 사랑스러운 반려견이 게스트로서 존중받으며,<br>
+                나아가 우리 모두에게 더 나은 세상을 만들기 위해 노력합니다.
+              </p>
+              <span class="txt">- dreamhanger -</span>
+            </div>
+          </div>
+      </div>
+      <!-- //content01 -->
+
+      <!-- contents02 -->
+      <div class="content02">
+        <div class="cont_inner">
+          <div class="textArea02">          
+            <h2 class="title">Hang your dream</h2>
+            <p class="text">
+              "드림행거는 새로운 가치를 찾아<br>
+              세상의 변화에 희망을 겁니다."
+            </p>
+            <span class="txt">
+              Dreamhanger finds new values for changing the world hopefully.
+            </span>
+          </div>
+          <!-- photoArea -->
+          <div class="photoArea">
+            <ul class="photo_card clear">
+              <li>
+                <a href="#">
+                  <img src="img/about01_ESG.jpeg" alt="ESG campaign">
+                  <div class="txtBox">
+                    <h3 class="pt_title">ESG campaign</h3>
+                    <p class="pt_text">
+                      자원 선순환 구조를 통한<br>
+                      지속가능한 프로세스 확립
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/about02_stayGreen.jpeg" alt="Stay Green">
+                  <div class="txtBox">
+                    <h3 class="pt_title">Stay Green</h3>
+                    <p class="pt_text">
+                      5성급 호텔 리넨 90% 업사이클링<br>
+                      시트 1장 재활용 시 7.8kg의 이산화탄소 절감
+                    </p>
+                </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/about03_guest.jpeg" alt="guest">
+                  <div class="txtBox">
+                    <h3 class="pt_title">I'm a guest</h3>
+                    <p class="pt_text">
+                      애완견이 아닌 반려견으로<br>
+                      반려동물 인식 개선을 위한 노력
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- //photoArea -->
+
+          <!-- btnArea -->
+          <div class="btnArea">
+            <a href="#" class="btn_aboutUS">ABOUT US</a>
+          </div>
+          <!-- //btnArea -->
+        
+        </div>
+      </div>
+      <!-- //content02 -->
+      
+      <!-- content03 -->
+      <div class="content03">
+        <div class="cont_inner">
+          <div class="titleArea">
+            <h3>B2B SERVICE</h3>
+            <h2>PRODUCT</h2>
+          </div>
+          <div class="prdList">
+            <ul class="clear">
+              <li class="goods01 prd">
+                <a href="#">
+                  <figure><img src="img/goods01_capeset01_yellow.jpeg" alt="케이프set_yellow"></figure>
+                  <div class="prd_Textarea">
+                    <span class="own_Brand">자체브랜드</span>
+                    <p class="prd_name">케이프 set (summer holidays ver.)</p>
+                    <span class="acceptance">	승인된 기업회원 공개</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods02 prd">
+                <a href="#">
+                  <figure><img src="img/goods02_capeset02_green.jpeg" alt="케이프set_green"></figure>
+                  <div class="prd_Textarea">
+                    <span class="own_Brand">자체브랜드</span>
+                    <p class="prd_name">케이프 set (eco-stay ver.)</p>
+                    <span class="acceptance">	승인된 기업회원 공개</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods03 prd">
+                <a href="#">
+                  <figure><img src="img/goods03_capeset03_pink.jpeg" alt="케이프set_pink"></figure>
+                  <div class="prd_Textarea">
+                    <span class="own_Brand">자체브랜드</span>
+                    <p class="prd_name">케이프 set (hotel budapest ver.)</p>
+                    <span class="acceptance">	승인된 기업회원 공개</span>
+                  </div> 
+                </a>
+              </li>
+              <li class="goods04 prd">
+                <a href="#">
+                  <figure><img src="img/goods04_capeset04_orange.jpeg" alt="케이프set_orange"></figure>
+                  <div class="prd_Textarea">
+                    <span class="own_Brand">자체브랜드</span>
+                    <p class="prd_name">케이프 set (christmas ver.)</p>
+                    <span class="acceptance">	승인된 기업회원 공개</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="clear">
+              <li class="goods05 prd">
+                <a href="#">
+                  <figure><img src="img/goods05_Mat.jpeg" alt="반려견 전용 휴대용 매트"></figure>
+                  <div class="prd_Textarea">
+                    <span class="own_Brand">자체브랜드</span>
+                    <p class="prd_name">반려견 전용 휴대용 매트</p>
+                    <span class="acceptance">	승인된 기업회원 공개</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods06 prd">
+                <a href="#">
+                  <figure><img src="img/goods06_bag.jpeg" alt="산책가방"></figure>
+                  <div class="prd_Textarea">
+                    <span class="own_Brand">자체브랜드</span>
+                    <p class="prd_name">산책 가방</p>
+                    <span class="acceptance">	승인된 기업회원 공개</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods07 prd">
+                <a href="#">
+                  <figure><img src="img/goods07_toy.jpeg" alt="핸드메이드 패브릭 장난감"></figure>
+                  <div class="prd_Textarea">
+                    <span class="own_Brand">자체브랜드</span>
+                    <p class="prd_name">핸드메이드 패브릭 장난감</p>
+                    <span class="acceptance">	승인된 기업회원 공개</span>
+                  </div>
+                </a>
+              </li>
+              <li class="goods08 prd">
+                <a href="#">
+                  <figure><img src="img/goods08_keyring.jpeg" alt="패브릭 키링"></figure>
+                  <div class="prd_Textarea">
+                    <span class="own_Brand">자체브랜드</span>
+                    <p class="prd_name">패브릭 키링</p>
+                    <span class="acceptance">	승인된 기업회원 공개</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- //prdList -->
+        </div>
+      </div>
+      <!-- //content03 -->
+
+      <!-- content04 -->
+      <div class="content04">
+        <div class="main_Banner">
+          <figure><img src="img/forest.png" alt="슬로건"></figure>
+        </div>
+        <div class="cont_inner">
+          <div class="txt_insta">
+            <h2 class="insta_tit">INSTAGRAM</h2>
+            <p class="insta_adr"><a href="#">@dreamhanger_official</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- //content04 -->
+    </div>
+    <!-- //container -->
+    
+    <!--  footer  -->
+    <footer id="footer">
+      <div class="foot_inner">
+        <ul class="info_Area">
+          <li class="company info">드림행거
+            <ul>
+              <li>사업자등록번호 2055900530</li>
+              <li>통신판매업신고번호 제 2022-서울용산-1726</li>
+              <li><address>대표 김소연 서울특별시 용산구 청파로47길 46 (청파동2가) 401호</address></li>
+              <li>하나은행 350-910293-15107 예금주 김소연(드림행거)</li>
+              <li> 호스팅 서비스 제공 : CAFE24 Global Hosting</li>
+              <li>개인정보보호책임자 김소연(<a href="#">dreamhanger.official@gmail.com</a>)</li>
+            </ul>
+          </li>
+          <li class="customer info">배송조회
+            <ul>
+              <li>전화 <a href="tel: 1588-1300">1588-1300</a></li>
+              <li><a href="https://service.epost.go.kr/iservice/usr/trace/usrtrc001k01.jsp"></a>우체국택배 배송조회</li>
+            </ul>
+          </li>
+          <li class="inquiry info">제휴문의
+            <ul>
+              <li>마케팅/ 제휴/ 프로젝트 협업문의</li>
+              <li><a href="mailto:dreamhanger.official@gmail.com">dreamhanger.official@gmail.com</a></li>
+            </ul>
+          </li>
+          <li class="agreement info">
+            <ul>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+          </li>
+        </ul>
+        <span class="copyright clear"> &copy; dreamhanger</span>
+      </div>
+    </footer>
+  </div>
+  <script src="js/dreamhanger.js"></script>
+  </body>
+</html>
+
+
+
+
+
